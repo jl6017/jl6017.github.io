@@ -1,0 +1,39 @@
+body{
+    font-family: Helvetica;
+    color:#000;
+    background-color: #EBEFF2;
+    margin:0;
+    padding:0;
+}
+
+.box {
+    width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 10px 5px 5px #CCD6D9;
+}
+.header {
+    border-bottom: 1px solid #bbb;
+    color: #0B59BF;
+}
+.bio {
+    border-bottom: 1px solid #bbb;
+}
+.projects {
+    border-bottom: 1px solid #bbb;
+}
+.bioimg {
+    width: 200px;
+    float: left;
+    border-radius: 20px;
+    margin: 1em 5em 1em 0;
+}
+.biotext {
+    width: 960px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: justify;
+}
