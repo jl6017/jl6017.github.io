@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=1000">
         <link rel="shortcut icon" href="resource/img/logo05.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>JiongLin</title>
@@ -35,41 +36,92 @@
                         Before coming to Columbia University, I graduated from Huazhong University of Science and Technology.
                     </p>
                     <p id="text-2">
-                        Research Interests: robotics, machine learning, hardware design.
+                        Research Interests: robotics, machine learning.
                     </p>
                 </div>
             </div>
             <div class="projects">
-                <h3>Projects</h3>
+                <h3>Research Projects</h3>
                 <div class="section">
                     <div class="sec-img">
-                        <img src="resource/img/aiface01.gif" class="sec-img" alt="..." >
-
+                        <img src="resource/img/faceexp.png" class="sec-img" alt="..." >
                     </div>
                     <div class="sec-text">
                         <p>
-                            <h3>AI Face: Driving Animatronic Robotic Face with Learned Models</h3>
+                            <h4>Facial expression robot (Sep 2022 ~ Aug 2023)</h3>
                         </p>
                         <p id="text-2">
-                            <strong>Description</strong>: I am working on robot control, including neck movements control.
-                            I also did some work in computer vision.
-                            The robot face can mimic human face movements.
+                            <strong>1. Hardware (based on previous generations)</strong>: 
+                            using Solidworks and Blender for the sturcture design, using 3d printing materials and aluminum profiles for the construction.
                         </p>
+                        <p id="text-2">
+                            <strong>2. Coding</strong>: 
+                            Using Ros2, control differert modules in parallel, including cameras, learning models, eyeballs, eyelids, mouth and jaw, and neck.
+                            I also wrote a tracking and attention demo. The whole system was coding on Nvidia Jetson Xavier. 
+                            
+                        </p>
+                        <p id="text-2">
+                            <strong>3. Learning models</strong>: 
+                            My work includes preparing the data and training two models.
+                            The first model is mapping from landmarks to motors commands. 
+                            The second model is to predict the future expressions, based on landmarks movements.
+                            The complete pipline can run in real-time interaction.
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="section">
+                    <div class="sec-img">
+                        <img src="resource/img/legged.png" class="sec-img" alt="..." >
+                    </div>
+                    <div class="sec-text">
                         <p>
-                            <a href="https://youtu.be/sMtWutg_9_4">Video</a>
+                            <h4>Legged robot (Jul ~ Aug 2023)</h3>
+                        </p>
+                        <p id="text-2">
+                            <strong>1. Forward model (self model)</strong>: 
+                            Training the model to predict the next state with current state and action. 
+                            Then, use the self-model and different reward function to select different gaits.
+                        </p>
+                        <p id="text-2">
+                            <strong>2. Training data sampling</strong>: 
+                            Testing different data sampling methods to improve training efficiency.
+                        </p>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="projects">
+                <h3>Course Projects</h3>
+
+                <div class="section">
+                    <div class="sec-img">
+                        <img src="resource/img/robotlearning.gif" class="sec-img" alt="..." >
+                    </div>
+                    <div class="sec-text">
+                        <p>
+                            <h4>Torque control simulation, Deep Reinforcement Learning</h3>
+                        </p>
+                        <p id="text-2">
+                            <strong>Description</strong>: 
+                            Robot learning course (MECE6616) project. Using different methods for the 2-dof and 3-dof arm's torque control task: 
+                            1. Model predictive control, 2. Deep Q-learning, implemented with pytorch. 3. PPO, using Openai Gym and Stable-Baselines3.
                         </p>
                     </div>
                 </div>
+
                 <div class="section">
                     <div class="sec-img">
                         <img src="resource/img/softrobot.gif" class="sec-img" alt="..." >
                     </div>
                     <div class="sec-text">
                         <p>
-                            <h3>Evolution Algorithm (MECS4510) project</h3>
+                            <h4>Jumping Gait of the soft quadrupeds in simulation</h3>
                         </p>
                         <p id="text-2">
                             <strong>Description</strong>: 
+                            Evolution algorithm (MECS4510) final project.
                             Using evolution algorithm to train a group of soft robots walking.
                             Co-evolution method has also been used to evolve the robot shape and the controller at the same time.
                         </p>
@@ -83,15 +135,13 @@
                         <img src="resource/img/gatsp01.gif" class="sec-img" alt="..." >
                     </div>
                     <div class="sec-text">
-                        <p><h3>TSP, Genetic Algorithm (MECS4510) assignment</h3></p>
+                        <p><h4>TSP, Genetic Algorithm (MECS4510) assignment</h3></p>
                         
                         <p id="text-2">
                             <strong>Description</strong>: 
                             Travel sales man problem, 1000 points, using genetic algorithm.
                         </p>
                         <p>
-                            <a href="https://youtu.be/9w7tpL0_b-M">Video</a>
-                            &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
                             <a href="resource/img/MECS4510_HW1_jl6017.pdf">PDF</a>
                         </p>
                     </div>    
@@ -101,14 +151,12 @@
                         <img src="resource/img/gp01.gif" class="sec-img" alt="..." >
                     </div>
                     <div class="sec-text">
-                        <p><h3>Symbolic Regression (MECS4510) assignment</h3> </p>
+                        <p><h4>Symbolic Regression (MECS4510) assignment</h3> </p>
                         <p id="text-2">
                             <strong>Description</strong>:
                             Using genetic programming to solve the symbolic regression problem (find the math expression that fits the given data points). 
                         </p>
                         <p>
-                            <a href="https://youtu.be/_2x3E02oHHY">Video</a>
-                            &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
                             <a href="resource/img/MECS4510_HW2_jl6017.pdf">PDF</a>
                         </p>
                     </div>
@@ -119,7 +167,7 @@
                     </div>
                     <div class="sec-text">
                         <p>
-                            <h3>Data Science (MECE4520) project</h3>
+                            <h4>Data Science (MECE4520) project</h3>
                         </p>
     
                         <p id="text-2">
@@ -132,30 +180,42 @@
                         </p>
                     </div>
                 </div>
+
+            </div>
+
+            <div class="projects">
+                <h3>Undergraduate</h3>
                 <div class="section">
                     <div class="sec-img">
                         <img src="resource/img/chinesechess.gif" class="sec-img" alt="..." >
                     </div>
                     <div class="sec-text">
-                        <p><h3>Chinese chess robot</h3></p>
+                        <p><h4>Chinese chess robot</h3></p>
                         <p id="text-2">
-                            <strong>Description</strong>: 
-                            In this project, we designed and built a delta robot that can play Chinese chess with a human in real-time.
+                            <strong>1. Hardware</strong>: 
+                            Designing a parallel sturctured robot manipulator 
+                            that has three degrees of freedom and a suction cup.
+                        </p>
+                        <p id="text-2">
+                            <strong>2. Coding</strong>: 
+                            The manipulator was controlled through G-code. 
+                            Using OpenCV for the Chess pieces movements detection.
+                            Using Alpha-Beta Pruning algorithm for the AI Chess playing.
                         </p>
                         <p>
                             <a href="https://youtu.be/NqSD2B2xuJ4">Video</a>
                         </p>
-                    </div>
-                    
-                    
+                    </div>             
                 </div>
+
             </div>
+
             <div class="projects">
                 <h3>Skills</h3>
                 <ul>
-                    <li>C++ and OpenGL</li>
-                    <li>Python and PyTorch</li>
-                    <li>Mechanical design</li>
+                    <li>Robotics: Ros2, Pybullet</li>
+                    <li>Coding: Python, PyTorch, C++, OpenGL</li>
+                    <li>Mechanical Design</li>
                 </ul>
             </div>
             <div class="foot">
