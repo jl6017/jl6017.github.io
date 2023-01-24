@@ -65,6 +65,17 @@ a:hover {
     margin: 1em 1em 1em 1em;
 
 }
+
+.pubtext {
+    /* text-align:center; */
+    /* float: right; */
+    width: 900px;
+    line-height: 24px;
+    font-size: 18px;
+    text-align: justify;
+    margin: 1em 1em 1em 1em;
+
+}
 .projects {
     border-bottom: 1px solid #ddd;
 }
@@ -93,4 +104,9 @@ a:hover {
 #text-2 {
     /* color: #2C3140; */
     color: #5F6673;
+}
+
+#text-3 {
+    color: #2C3140;
+    /* color: #5F6673; */
 }
