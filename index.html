@@ -131,12 +131,57 @@
                 <br>
                 <em>Nature Machine Intelligence</em> 2025
                 <br>
-                <a href="https://jl6017.github.io/AutoURDF/">project page</a>
-                /
                 <a href="https://www.nature.com/articles/s42256-025-01006-w">paper</a>
+                /
+                <a href="https://arxiv.org/abs/2311.12151">arXiv</a>
                 <p></p>
                 <p>
                   Robots can now build kinematic self-awareness from raw video using deep neural networks, enabling them to model their 3D shapes from a single 2D camera, infer motion, adapt to changes, and recover from simulated damage without constant programming.
+                </p>
+              </td>
+            </tr>
+
+            <tr onmouseout="face_stop()" onmouseover="face_start()" style="display: flex; align-items: center;">
+              <td style="padding:10px; width:40%; vertical-align:middle; display: flex; justify-content: center;">
+                <div class="one">
+                  <div class="two" id='face_image'>
+                    <video width="100%" muted autoplay loop>
+                      <source src="images/emo_video.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <img src="images/emo.png" width="100%">
+                </div>
+                <script type="text/javascript">
+                  function face_start() {
+                    document.getElementById('face_image').style.opacity = "1";
+                  }
+            
+                  function face_stop() {
+                    document.getElementById('face_image').style.opacity = "0";
+                  }
+                  face_stop();
+                </script>
+              </td>
+              <td style="padding:10px; width:60%; vertical-align:middle;">
+                <a href="https://www.science.org/doi/10.1126/scirobotics.adi4724">
+                  <span class="papertitle">Human-robot facial coexpression</span>
+                </a>
+                <br>
+                <a href="https://yuhang-hu.com/">Yuhang Hu</a>
+                <a href="http://boyuanchen.com/">Boyuan Chen</a>
+                <strong>Jiong Lin</strong>, 
+                <a href="https://yunzhe.wang/">Yunzhe Wang</a>,
+                <a href="https://www.wykac.com/">Yingke Wang</a>,
+                <a href="https://cameron-mehlman.com/">Cameron Mehlman</a>,
+                <a href="https://hodlipson.com">Hod Lipson</a>
+                <br>
+                <em>Science Robotics</em> 2024
+                <br>
+                <a href="https://www.science.org/doi/10.1126/scirobotics.adi4724">paper</a>
+                <p></p>
+                <p>
+                  We developed and trained our humanoid facial robot, Emo, with 26 motors and flexible silicone skin to anticipate and mirror human expressions in real time, predicting a smile 839 milliseconds before it occurs by analyzing subtle facial changes.
                 </p>
               </td>
             </tr>
