@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=1000">
+        <link rel="shortcut icon" href="resource/img/logo05.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>JiongLin</title>
+    </head>
+
+    <body>
+        <div class="box">
+            <div class="header">
+                <a href="resource/JiongResume.pdf"><strong>CV</strong></a>
+                &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+                <a href="https://github.com/jl6017"><strong>Github</strong></a>
+                <br>
+            </div>
+            <div class="bio">
+                <div class="bioimg">
+                    <img src="resource/img/jionglin.png" class="bioimg" alt="..." >
+
+                </div>
+                <div class="biotext">
+                    <p>
+                        <h1>Jiong Lin</h1>
+                        <h4 id="text-1">Email: jl6017@columbia.edu</h4>
+                    </p>
+                    <p id="text-2">      
+                        I am a master student at Columbia University. My major is Mechanical Engineering.
+                        I started working at <a href="https://www.creativemachineslab.com/">Creative Machine Lab</a> in the 21-fall semester.
+                        From Sep 2021 to August 2022,
+                        I worked with <a href="https://www.yuhang-hu.com">Yuhang Hu</a> on the <a href="http://www.cs.columbia.edu/~bchen/aiface/">AI Face project</a>, 
+                        advised by Professor <a href="https://www.hodlipson.com/">Hod Lipson</a>.
+                        Currently, I am working on applying Neural Field models to robot arm 3d morphology learning.
+                        Before coming to Columbia University, I graduated from Huazhong University of Science and Technology.
+                    </p>
+                    <p id="text-2">
+                        Eduaction:
+                        <br>
+                        Columbia, MS in Mechanical Engineering, GPA 3.99 / 4.3<br>
+                        Huazhong U of Science and Technology, BS in Mechanical Engineering, GPA 3.72 / 4.0
+                    </p>
+                    <p id="text-2">
+                        Research Interests: robotics, machine learning.
+                    </p>
+
+                </div>
+            </div>
+            <div class="projects">
+                <h3>Publications</h3>
+                <div class="pubtext">
+                <p id="text-2">
+                    Yuhang Hu, Boyuan Chen, <ins>Jiong Lin</ins>, Yunzhe Wang, Yingke Wang, Cameron Mehlman, Hod Lipson<br>
+                    <b id="text-3">Human-Robot Facial Co-expression</b>, In Preparation at Science Robotics.
+                </p>
+                </div>
+            </div>
+            <div class="projects">
+                <h3>Research Projects</h3>
+                <div class="section">
+                    <div class="sec-img">
+                        <img src="resource/img/aiface01.png" class="sec-img" alt="..." >
+                    </div>
+                    <div class="sec-text">
+                        <p>
+                            <h4>Facial expression robot (Sep 2021 ~ Aug 2022)</h3>
+                        </p>
+                        <p id="text-2">
+                            <strong>1. Hardware (based on previous generations)</strong>: 
+                            using Solidworks and Blender for the structure design, using 3d printing materials and aluminum profiles for the construction.
+                        </p>
+                        <p id="text-2">
+                            <strong>2. Coding</strong>: 
+                            Using Ros2, control different modules in parallel, including cameras, learning models, eyeballs, eyelids, mouth and jaw, and neck.
+                            I also wrote a tracking and attention demo. The whole system was coded on Nvidia Jetson Xavier. 
+                            
+                        </p>
+                        <p id="text-2">
+                            <strong>3. Learning models</strong>: 
+                            Training the learning model mapping from facial image to robot motor control
+                        </p>
+                    </div>
+                    
+                </div>
+                <div class="section">
+                    <div class="sec-img">
+                        <img src="resource/img/legged02.png" class="sec-img" alt="..." >
+                    </div>
+                    <div class="sec-text">
+                        <p>
+                            <h4>Legged robot (Jul ~ Aug 2022)</h3>
+                        </p>
+                        <p id="text-2">
+                            <strong>1. Forward model (self model)</strong>: 
+                            Training the model to predict the next state with current state and action. 
+                            Then, use the self-model and different reward function to select different gaits.
+                        </p>
+                        <p id="text-2">
+                            <strong>2. Training data sampling</strong>: 
+                            Testing different data sampling methods to improve training efficiency.
+                        </p>
+                </div>
+            </div>
+
+            </div>
+
+            <div class="projects">
+                <h3>Course Projects</h3>
+
+                <div class="section">
+                    <div class="sec-img">
+                        <img src="resource/img/elliptical_gait.gif" class="sec-img" alt="..." >
+                    </div>
+                    <div class="sec-text">
+                        <p>
+                            <h4>Bipedal robot in Mujoco</h3>
+                        </p>
+                        <p id="text-2">
+                            <strong>Description</strong>: 
+                            Robotics studio (MECE4611) project. Designed a parallel legged robot. Controled with liber Potato.
+                            1. Set up simulation in Mujoco. 
+                            2. Training a Model to represent the inverse kinematics. 
+                            3. Design a elliptical gait and find the motor positions using the IK model.
+                            4. Simulate the elliptical gait in Mujoco. 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="sec-img">
+                        <img src="resource/img/bipedalgait.gif" class="sec-img" alt="..." >
+                    </div>
+                    <div class="sec-text">
+                        <p>
+                            <h4>Bipedal robot, with two 3-dof parallel legs</h3>
+                        </p>
+                        <p id="text-2">
+                            <strong>Description</strong>: 
+                            Robotics studio (MECE4611) project. Designed a parallel legged robot. Controled with liber Potato.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="sec-img">
+                        <img src="resource/img/robotlearning.gif" class="sec-img" alt="..." >
+                    </div>
+                    <div class="sec-text">
+                        <p>
+                            <h4>Torque control simulation, Deep Reinforcement Learning</h3>
+                        </p>
+                        <p id="text-2">
+                            <strong>Description</strong>: 
+                            Robot learning course (MECE6616) project. Using different methods for the 2-dof and 3-dof arm's torque control task: 
+                            1. Model predictive control, 2. Deep Q-learning, implemented with pytorch. 3. PPO, using Openai Gym and Stable-Baselines3.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="sec-img">
+                        <img src="resource/img/softrobot.gif" class="sec-img" alt="..." >
+                    </div>
+                    <div class="sec-text">
+                        <p>
+                            <h4>Jumping Gait of the soft quadrupeds in simulation</h3>
+                        </p>
+                        <p id="text-2">
+                            <strong>Description</strong>: 
+                            Evolution algorithm (MECS4510) final project.
+                            Using evolution algorithm to train a group of soft robots walking.
+                            Co-evolution method has also been used to evolve the robot shape and the controller at the same time.
+                            The mass-spring physical simulator was coded using c++ and OpenGL.
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/tsnF9X-563o">Video</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="sec-img">
+                        <img src="resource/img/gatsp01.gif" class="sec-img" alt="..." >
+                    </div>
+                    <div class="sec-text">
+                        <p><h4>TSP, Genetic Algorithm (MECS4510) assignment</h3></p>
+                        
+                        <p id="text-2">
+                            <strong>Description</strong>: 
+                            Travel sales man problem, 1000 points, using genetic algorithm.
+                        </p>
+                        <p>
+                            <a href="resource/img/MECS4510_HW1_jl6017.pdf">PDF</a>
+                        </p>
+                    </div>    
+                </div>
+                <div class="section">
+                    <div class="sec-img">
+                        <img src="resource/img/gp01.gif" class="sec-img" alt="..." >
+                    </div>
+                    <div class="sec-text">
+                        <p><h4>Symbolic Regression (MECS4510) assignment</h3> </p>
+                        <p id="text-2">
+                            <strong>Description</strong>:
+                            Using genetic programming to solve the symbolic regression problem (find the math expression that fits the given data points). 
+                        </p>
+                        <p>
+                            <a href="resource/img/MECS4510_HW2_jl6017.pdf">PDF</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="sec-img">
+                        <img src="resource/img/ds4520.gif" class="sec-img" alt="..." >
+                    </div>
+                    <div class="sec-text">
+                        <p>
+                            <h4>Data Science (MECE4520) project</h3>
+                        </p>
+    
+                        <p id="text-2">
+                            <strong>Description</strong>: 
+                            In this project, we compared four different learning methods, including DNN, CNN, and Res-net, training the handwriting recognition models.
+                            The datasets we used are the EMNIST(letters included) and the MNIST(only digits)
+                        </p>
+                        <p>
+                            <a href="https://github.com/jl6017/deepLearningStudy2021">Github</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="projects">
+                <h3>Undergraduate</h3>
+                <div class="section">
+                    <div class="sec-img">
+                        <img src="resource/img/chinesechess.gif" class="sec-img" alt="..." >
+                    </div>
+                    <div class="sec-text">
+                        <p><h4>Chinese chess robot</h3></p>
+                        <p id="text-2">
+                            <strong>1. Hardware</strong>: 
+                            Designing a parallel sturctured robot manipulator 
+                            that has three degrees of freedom and a suction cup.
+                        </p>
+                        <p id="text-2">
+                            <strong>2. Coding</strong>: 
+                            The manipulator was controlled through G-code. 
+                            Using OpenCV for the Chess pieces movements detection.
+                            Using Alpha-Beta Pruning algorithm for the AI Chess playing.
+                        </p>
+                        <p>
+                            <a href="https://youtu.be/NqSD2B2xuJ4">Video</a>
+                        </p>
+                    </div>             
+                </div>
+
+            </div>
+
+            <div class="projects">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Robotics: Ros2, Pybullet, Mujoco</li>
+                    <li>Coding: Python, PyTorch, C++, OpenGL</li>
+                    <li>Mechanical Design</li>
+                </ul>
+            </div>
+            <div class="foot">
+                
+
+            </div>
+        </div>          
+    </body>
+</html>
