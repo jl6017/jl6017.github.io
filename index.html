@@ -13,7 +13,7 @@
   </head>
 
   <body>
-    <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -53,15 +53,15 @@
 
 
             <tr onmouseout="au_stop()" onmouseover="au_start()" style="display: flex; align-items: center;">
-              <td style="padding:8px; width:40%; vertical-align:middle; display: flex; justify-content: center;">
-                <div class="one" style="position: relative; width: 100%; padding-top: 75%; overflow: hidden;">
-                  <div class="two" id='au_image' style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-                    <video width="100%" height="100%" muted autoplay loop style="object-fit: cover;">
-                      <source src="images/autourdf_video.mp4" type="video/mp4">
+              <td style="padding:10px; width:40%; vertical-align:middle; display: flex; justify-content: center;">
+                <div class="one">
+                  <div class="two" id='au_image'>
+                    <video width="100%" muted autoplay loop>
+                      <source src="images/autourdf_video_43.mp4" type="video/mp4">
                       Your browser does not support the video tag.
                     </video>
                   </div>
-                  <img src="images/au.jpg" width="100%" height="100%" style="object-fit: cover; position: absolute; top: 0; left: 0;">
+                  <img src="images/au.jpg" width="100%">
                 </div>
                 <script type="text/javascript">
                   function au_start() {
@@ -74,7 +74,7 @@
                   au_stop();
                 </script>
               </td>
-              <td style="padding:8px; width:60%; vertical-align:middle;">
+              <td style="padding:10px; width:60%; vertical-align:middle;">
                 <a href="https://jl6017.github.io/AutoURDF/">
                   <span class="papertitle">AutoURDF: Unsupervised Robot Modeling from Point Cloud Frames Using Cluster Registration</span>
                 </a>
@@ -86,7 +86,7 @@
                 <a href="https://judahgoldfeder.com/">Judah Goldfeder</a>,
                 <a href="https://hodlipson.com">Hod Lipson</a>
                 <br>
-                <em>CVPR</em>, 2025
+                <em>CVPR</em> 2025
                 <br>
                 <a href="https://jl6017.github.io/AutoURDF/">project page</a>
                 /
@@ -97,6 +97,51 @@
                 </p>
               </td>
             </tr>
+
+            <tr onmouseout="vsm_stop()" onmouseover="vsm_start()" style="display: flex; align-items: center;">
+              <td style="padding:10px; width:40%; vertical-align:middle; display: flex; justify-content: center;">
+                <div class="one">
+                  <div class="two" id='vsm_image'>
+                    <video width="100%" muted autoplay loop>
+                      <source src="images/vsm_video.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <img src="images/vsm.png" width="100%">
+                </div>
+                <script type="text/javascript">
+                  function vsm_start() {
+                    document.getElementById('vsm_image').style.opacity = "1";
+                  }
+            
+                  function vsm_stop() {
+                    document.getElementById('vsm_image').style.opacity = "0";
+                  }
+                  vsm_stop();
+                </script>
+              </td>
+              <td style="padding:10px; width:60%; vertical-align:middle;">
+                <a href="https://www.nature.com/articles/s42256-025-01006-w">
+                  <span class="papertitle">Teaching robots to build simulations of themselves</span>
+                </a>
+                <br>
+                <a href="https://yuhang-hu.com/">Yuhang Hu</a>
+                <strong>Jiong Lin</strong>, 
+                <a href="https://hodlipson.com">Hod Lipson</a>
+                <br>
+                <em>Nature Machine Intelligence</em> 2025
+                <br>
+                <a href="https://jl6017.github.io/AutoURDF/">project page</a>
+                /
+                <a href="https://www.nature.com/articles/s42256-025-01006-w">paper</a>
+                <p></p>
+                <p>
+                  Robots can now build kinematic self-awareness from raw video using deep neural networks, enabling them to model their 3D shapes from a single 2D camera, infer motion, adapt to changes, and recover from simulated damage without constant programming.
+                </p>
+              </td>
+            </tr>
+            
+            
             
 
             
