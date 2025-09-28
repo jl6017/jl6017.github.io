@@ -50,6 +50,56 @@
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
 
+            <tr onmouseout="genmech_stop()" onmouseover="genmech_start()" style="display: flex; align-items: center;">
+              <td style="padding:10px; width:40%; vertical-align:middle; display: flex; justify-content: center;">
+                <div class="one">
+                  <div class="two" id='genmech_image'>
+                    <video width="100%" muted autoplay loop>
+                      <source src="images/nail_tracking.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <img src="images/real.svg" width="100%">
+                </div>
+                <script type="text/javascript">
+                  function genmech_start() {
+                    document.getElementById('genmech_image').style.opacity = "1";
+                  }
+
+                  function genmech_stop() {
+                    document.getElementById('genmech_image').style.opacity = "0";
+                  }
+                  genmech_stop();
+                </script>
+              </td>
+              <td style="padding:10px; width:60%; vertical-align:middle;">
+                <a href="https://jl6017.github.io/GenMech/">
+                  <span class="papertitle">Generative Synthesis of Kinematic Mechanisms</span>
+                </a>
+                <br>
+                <strong>Jiong Lin</strong>, 
+                <a href="https://pigker.github.io/">Jialong Ning</a>,
+                <a href="https://judahgoldfeder.com/">Judah Goldfeder</a>,
+                <a href="https://hodlipson.com">Hod Lipson</a>
+                <br>
+                <em>NeurIPS</em> 2025
+                <br>
+                <!-- <a href="https://cvpr.thecvf.com/virtual/2025/poster/33613">paper</a> -->
+                
+                <a href="https://jl6017.github.io/GenMech/">project page</a>
+                /
+                <!-- <a href="https://arxiv.org/abs/2412.05507">arXiv</a> -->
+                
+                <a href="https://github.com/jl6017/GenMech">code</a>
+                
+                <!-- <a href="data/cvpr-poster-c.pdf">poster</a> -->
+                <p></p>
+                <p>
+                  We formulate the problem of kinematic synthesis for planar linkages as a cross-domain image generation task. 
+                  We develop a planar linkages dataset using RGB image representations, covering a range of mechanisms: from simple types such as crank-rocker and crank-slider to more complex eight-bar linkages like Jansen's mechanism.
+                </p>
+              </td>
+            </tr>
 
             <tr onmouseout="au_stop()" onmouseover="au_start()" style="display: flex; align-items: center;">
               <td style="padding:10px; width:40%; vertical-align:middle; display: flex; justify-content: center;">
